@@ -26,7 +26,7 @@ no_index:
 provides:
   WebService::MusixMatch:
     file: lib/WebService/MusixMatch.pm
-    version: '0.01'
+    version: '0.02'
 requires:
   Cache::LRU: '0'
   Carp: '0'
@@ -42,5 +42,5 @@ resources:
   bugtracker: https://github.com/hondallica/p5-WebService-MusixMatch/issues
   homepage: https://github.com/hondallica/p5-WebService-MusixMatch
   repository: https://github.com/hondallica/p5-WebService-MusixMatch.git
-version: '0.01'
+version: '0.02'
 x_authority: cpan:HONDALLIC
