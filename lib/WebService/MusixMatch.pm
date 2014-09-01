@@ -8,7 +8,7 @@ use URI::QueryParam;
 use Carp;
 use Moo;
 use namespace::clean;
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 
 $Net::DNS::Lite::CACHE = Cache::LRU->new( size => 512 );
@@ -17,7 +17,7 @@ has 'api_key' => (
     is => 'rw',
     isa => sub { $_[0] },
     required => 1,
-    default => $ENV{MUSIXMATCH_API_KEY},
+    default => sub { $ENV{MUSIXMATCH_API_KEY} },
 );
 
 has 'http' => (
@@ -107,7 +107,9 @@ WebService::MusixMatch - A simple and fast interface to the Musixmatch API
 =head1 SYNOPSIS
 
     use WebService::MusixMatch;
+
     my $mxm = new WebService::MusixMatch(apikey => 'YOUR_API_KEY');
+
     my $data = $mxm->chart_artist_get( country => 'JP' );
     $data = $mxm->track_search( q => 'One', f_artist_id => 64 );
     $data = $mxm->matcher_track_get(
