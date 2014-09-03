@@ -8,7 +8,7 @@ use URI::QueryParam;
 use Carp;
 use Moo;
 use namespace::clean;
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 
 
 $Net::DNS::Lite::CACHE = Cache::LRU->new( size => 512 );
@@ -121,7 +121,7 @@ WebService::MusixMatch - A simple and fast interface to the Musixmatch API
 
 =head1 DESCRIPTION
 
-The module provides a simple interface to the Bandcamp.com API. To use this module, you must first sign up at https://developer.musixmatch.com to receive an API key.
+The module provides a simple interface to the MusixMatch API. To use this module, you must first sign up at https://developer.musixmatch.com to receive an API key.
 
 =head1 METHODS
 These methods usage: https://developer.musixmatch.com/documentation/api-methods

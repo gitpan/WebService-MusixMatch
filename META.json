@@ -63,7 +63,7 @@
    "provides" : {
       "WebService::MusixMatch" : {
          "file" : "lib/WebService/MusixMatch.pm",
-         "version" : "0.03"
+         "version" : "0.04"
       }
    },
    "release_status" : "stable",
@@ -77,6 +77,6 @@
          "web" : "https://github.com/hondallica/p5-WebService-MusixMatch"
       }
    },
-   "version" : "0.03",
+   "version" : "0.04",
    "x_authority" : "cpan:HONDALLIC"
 }
