@@ -1,5 +1,8 @@
 Revision history for Perl extension WebService-MusixMatch
 
+0.06 2014-11-09T10:19:02Z
+    - Fix UserAgent
+
 0.05 2014-10-06T09:21:05Z
     - Fix document
 
